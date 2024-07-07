@@ -1,0 +1,126 @@
+---
+label: Blog Article
+hide_body: false
+fields:
+- name: coverImage
+  type: file
+  config:
+    maxSize: 64
+  label: Cover Image
+- name: coverImageAlt
+  type: text
+  config:
+    required: false
+  label: Cover Image Alt Text
+  description: Alt text for cover image
+  default: Picture
+- name: coverImageWidth
+  type: text
+  config:
+    required: false
+  label: Cover Image Width
+  default: '1200'
+- name: coverImageHeight
+  type: text
+  config:
+    required: false
+  label: Cover Image Height
+  default: '700'
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Title for post and site
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Description of the post (required for site desc and og desc)
+- name: excerpt
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Excerpt
+  description: Summary of the post
+- name: datetime
+  type: datetime
+  label: Datetime
+  description: Datetime purblished for the post
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+- name: slug
+  type: text
+  config:
+    required: false
+  label: Slug
+  description: Slug for the post. If not specified, file name will be used as slug
+- name: featured
+  type: boolean
+  label: Featured Post
+  description: Set the post as featured post
+  default: false
+- name: category
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - How Do I
+    - Random
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: Category of the post
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Tags for the post
+- name: author
+  type: select
+  default: Andrew Clarker
+  config:
+    required: true
+    options:
+    - Andrew Clarker
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Author
+  description: Author of the post
+- name: type
+  type: select
+  default: article
+  config:
+    required: true
+    options:
+    - article
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  description: Type of the post for OG
+pages:
+- contents/how-do-i-develop-my-portfolio-website-blog.md
+- contents/how-do-i-develop-my-terminal-portfolio-website-with-react.md
