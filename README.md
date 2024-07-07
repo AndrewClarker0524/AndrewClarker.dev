@@ -1,6 +1,6 @@
-# Sat Naing Portfolio & Blog
+# Andrew Clarker Portfolio & Blog
 
-![satnaing-portfolio-and-blog](https://user-images.githubusercontent.com/53733092/169645862-d1dda9cb-482f-4428-a63c-8eaf6910ab35.png)
+![satnaing-portfolio-and-blog]
 ![ts](https://badgen.net/badge/Built%20With/TypeScript/blue) ![vercel](https://img.shields.io/github/deployments/satnaing/my-portfolio/production?label=vercel&logo=vercel&logoColor=white)
 
 My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind CSS and GSAP is used for styling and animations. Blog contents are written in Markdown format. Light & Dark themes supported.
@@ -38,13 +38,13 @@ My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind
 Clone the project
 
 ```bash
-git clone https://github.com/satnaing/satnaing.dev.git
+git clone https://github.com/AndrewClarker0524/AndrewClarker.dev.git
 ```
 
 Go to the project directory
 
 ```bash
-cd satnaing.dev
+cd AndrewClarker.dev
 ```
 
 Remove remote origin
@@ -78,4 +78,4 @@ The digital art in the hero section was illustrated by a friend of mine ([Swann 
 
 ## Author
 
-- [@satnaing](https://satnaing.dev)
+- [@andrewclarker](https://andrewclarker-fullstack.vercel.app)
